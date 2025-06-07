@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F9FA">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- App Logo and Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hevttc"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:background="@drawable/login_et_bg"
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="科师综合校园应用"
+                android:textSize="24sp"
+                android:textColor="#212529"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本 1.0.0"
+                android:textSize="14sp"
+                android:textColor="#6C757D"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- App Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="河北科技师范学院综合校园应用是一款专为科师大学生设计的综合校园生活应用，
+提供课程管理、图书馆系统、待办事件创建等功能，帮助大家更高效的管理校园生活。"
+            android:textSize="16sp"
+            android:textColor="#495057"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Information Cards -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="应用信息"
+                    android:textSize="18sp"
+                    android:textColor="#212529"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Developer Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开发者："
+                        android:textSize="16sp"
+                        android:textColor="#495057"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物联网工程2203 oldhj"
+                        android:textSize="16sp"
+                        android:textColor="#212529"/>
+                </LinearLayout>
+
+                <!-- Contact Email -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系邮箱："
+                        android:textSize="16sp"
+                        android:textColor="#495057"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ztygzyx@126.com"
+                        android:textSize="16sp"
+                        android:textColor="#0D6EFD"/>
+                </LinearLayout>
+
+                <!-- Release Date -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布日期："
+                        android:textSize="16sp"
+                        android:textColor="#495057"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2025年5月29日"
+                        android:textSize="16sp"
+                        android:textColor="#212529"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Features Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="主要功能"
+                    android:textSize="18sp"
+                    android:textColor="#212529"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• 学生信息管理\n• 课程表查看\n• 成绩查询\n• 校园资讯\n• 个人中心"
+                    android:textSize="16sp"
+                    android:textColor="#495057"
+                    android:lineSpacingMultiplier="1.3"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Copyright Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="© 2025 手机移动开发APP大作业. All rights reserved."
+            android:textSize="14sp"
+            android:textColor="#6C757D"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
